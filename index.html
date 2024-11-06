@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>¡Feliz Cumpleaños, John Pablo!</h1>
+        <p>🎂 ¡Diviértete y que la alegría te acompañe todo el año!</p>
+
+        <!-- Sección de fotos -->
+        <div class="photo-section">
+            <img src="./imgs/juan1.jpg" alt="Foto de cumpleaños 1">
+            <img src="./imgs/juan2.jpg" alt="Foto de cumpleaños 2">
+        </div>
+
+        <!-- Sección de videos locales -->
+        <div class="video-section">
+            <video controls>
+                <source src="./imgs/juan3.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <video controls>
+                <source src="./imgs/juan4.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+
+        <!-- Links a videos de YouTube -->
+        <div class="youtube-section">
+            <a href="https://www.youtube.com/watch?v=H9aC5AGY9YU" target="_blank">🎥 Juan</a><br>
+            <a href="https://www.youtube.com/watch?v=sQKpjhCD7jg" target="_blank">🎥 Arriba Juan en YouTube</a>
+        </div>
+
+        <!-- Link a Spotify -->
+        <div class="spotify-section">
+            <a href="https://open.spotify.com/playlist/37i9dQZF1EJHKqazWRwwXJ?si=TLDXR51kT7Ovv3OkUVk4NA&pi=tRKZW2L3Qtmv9" target="_blank">🎶 Escuchar Playlist en Spotify</a>
+        </div>
+
+        <!-- Botones de mensajes de cumpleaños -->
+        <button onclick="mostrarMensaje('🎉 ¡Que este año esté lleno de momentos especiales, Juan!')">🎉</button>
+        <button onclick="mostrarMensaje('🎂 ¡Hoy es tu día, celébralo con mucha felicidad, John Pablo!')">🎂</button>
+        <button onclick="mostrarMensaje('🎈 Eres increíble TQM, ¡Feliz cumpleaños, Juanito!')">🎈</button>
+
+        <p id="mensaje"></p>
+
+        <!-- Sección del calendario real -->
+        <div class="calendar-section">
+            <h2>Calendario de Noviembre 2024</h2>
+            <table id="calendario"></table>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
